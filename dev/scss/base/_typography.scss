@@ -1,0 +1,79 @@
+html{
+    font-size:62.5%;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+	font-family: sans-serif;
+    @include font-size(16);
+    letter-spacing:0.13em;
+    color:$textColor;
+    line-height:1.5;
+}
+
+a {
+	color:$orange;
+	text-decoration:none;
+
+	&:hover, &:active {
+		text-decoration:underline;
+	}
+}
+
+strong {
+	font-weight:normal;
+	color:$yellow;
+}
+
+.font-bold {
+	font-weight:bold;
+}
+
+.font-normal {
+	font-weight:normal;
+}
+
+.white {
+	color:$white!important;
+}
+.orange {
+	color:$orange!important;
+}
+
+.yellow {
+	color:$yellow!important;
+}
+
+.green {
+	color:$green!important;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3 {
+	margin-top:0;
+	letter-spacing:0.2em;
+	line-height:1.2;
+	margin-bottom:1em;
+}
+
+h1, .h1 {
+	@include font-size(30);
+	font-weight:bold;
+}
+
+h2, .h2 {
+	@include font-size(26);
+	font-weight:bold;
+}
+
+h3, .h3 {
+	//@include font-size(22);
+	font-weight:normal;
+}
+
+h4, .h4 {
+	//@include font-size(20);
+	font-weight:normal;
+}
